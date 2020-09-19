@@ -1,0 +1,21 @@
+	db GYARADOS; 130
+
+	db 85, 125, 84, 71, 60, 80
+	; hp atk def spd sat sdf
+
+	db WATER, DRAGON ; type
+	db 45 ; catch rate
+	db 214 ; base exp
+	db DRAGON_SCALE, DRAGON_FANG ; items
+	db GENDER_F50 ; gender ratio
+	db 100 ; unknown 1
+	db 5 ; step cycles to hatch
+	db 5 ; unknown 2
+	INCBIN "gfx/pokemon/gyarados/front.dimensions"
+	dw NULL, NULL ; unused (beta front/back pics)
+	db GROWTH_SLOW ; growth rate
+	dn EGG_WATER_2, EGG_DRAGON ; egg groups
+
+	; tm/hm learnset
+	tmhm RETURN, HIDDEN_POWER, HEADBUTT, BODY_SLAM, TAKE_DOWN, ROAR, FLAMETHROWER, SURF, ICE_BEAM, BLIZZARD, HYPER_BEAM, STRENGTH, THUNDERBOLT, THUNDER, EARTHQUAKE, HYPER_VOICE, FIRE_BLAST, WATERFALL, OUTRAGE, TWISTER, ROCK_SMASH, WHIRLPOOL
+	; end
