@@ -1,0 +1,21 @@
+	db KINGDRA; 230
+
+	db 75, 75, 90, 80, 115, 90
+	; hp atk def spd sat sdf
+
+	db WATER, DRAGON ; type
+	db 45 ; catch rate
+	db 207 ; base exp
+	db DRAGON_SCALE, DRAGON_SCALE ; items
+	db GENDER_F50 ; gender ratio
+	db 100 ; unknown 1
+	db 20 ; step cycles to hatch
+	db 5 ; unknown 2
+	INCBIN "gfx/pokemon/kingdra/front.dimensions"
+	dw NULL, NULL ; unused (beta front/back pics)
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_WATER_1, EGG_DRAGON ; egg groups
+
+	; tm/hm learnset
+	tmhm RETURN, HIDDEN_POWER, HEADBUTT, BODY_SLAM, TAKE_DOWN, SURF, ICE_BEAM, HYPER_BEAM, EARTHQUAKE, TOXIC, WATERFALL, REST, SUBSTITUTE, ACID_JET, SLUDGE_BOMB, ICY_WIND, OUTRAGE, SWAGGER, DRAGONBREATH, PURSUIT, TWISTER, RAIN_DANCE, WHIRLPOOL
+	; end
